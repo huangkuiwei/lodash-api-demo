@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>_.flatten</title>
+  <script src="../js/lodash.js"></script>
+</head>
+<body>
+  <script>
+    /*
+    语法：_.flatten(array)
+    用法：减少一级array嵌套深度。
+    参数：array (Array): 需要减少嵌套层级的数组。
+    返回：(Array): 返回减少嵌套层级后的新数组。
+    */
+    let arr = [1, 2, [3], [[4], [5]]];
+    let newArr = _.flatten(arr);
+    console.log(newArr)      // [1, 2, 3, [4], [5]]
+  </script>
+</body>
+</html>
