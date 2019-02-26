@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>_.reverse</title>
+  <script src="../js/lodash.js"></script>
+</head>
+<body>
+  <script>
+    /*
+    语法：_.reverse(array)
+    用法：反转array，使得第一个元素变为最后一个元素，第二个元素变为倒数第二个元素，依次类推。
+          注意：这个方法会改变原数组 array，基于 Array#reverse.
+    参数：array (Array): 要修改的数组。
+    返回：(Array): 返回 array.
+    */
+    let arr = [1, 2, 3, 4, 5];
+    let newArr = _.reverse(arr);
+    console.log(arr);      //[5, 4, 3, 2, 1]
+    console.log(newArr)    //[5, 4, 3, 2, 1]
+  </script>
+</body>
+</html>
