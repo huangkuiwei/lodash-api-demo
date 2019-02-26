@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>_.takeRightWhile</title>
+  <script src="../js/lodash.js"></script>
+</head>
+<body>
+  <script>
+    /*
+    语法：_.takeRightWhile(array, [predicate=_.identity])
+    用法：从array数组的最后一个元素开始提取元素，直到 predicate 返回假值。predicate 会传入三个参数： (value, index, array)。
+    参数：array (Array): 要检索的数组。
+          [predicate=_.identity] (Array|Function|Object|string): 每次迭代调用的函数。
+    返回：(Array): 返回 array 数组的切片。
+    */
+    let arr = [1, 2, 3, 4, 5];
+    let newArr = _.takeRightWhile(arr, function (item) {
+      return item > 3
+    });
+    console.log(newArr);      //[4, 5]
+  </script>
+</body>
+</html>
