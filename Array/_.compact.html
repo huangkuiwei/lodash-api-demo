@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>_.compact</title>
+  <script src="../js/lodash.js"></script>
+</head>
+<body>
+  <script>
+    /*
+    语法：_.compact(array)
+    用法：创建一个新数组，包含原数组中所有的非假值元素。例如false, null, 0, "", undefined, 和 NaN 都是被认为是“假值”。
+    参数：array (Array): 待处理的数组
+    返回：(Array): 返回过滤掉假值的新数组。
+    */
+    let arr = [1, 0, '0', undefined, null, 'Hello', false, true, [1, 0]];
+    let newArr = _.compact(arr);
+    console.log(newArr)     //[1, '0', 'Hello', true, [1, 0]]
+  </script>
+</body>
+</html>
