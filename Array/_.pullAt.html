@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>_.pullAt</title>
+  <script src="../js/lodash.js"></script>
+</head>
+<body>
+  <script>
+    /*
+    语法：_.pullAt(array, [indexes])
+    用法：根据索引 indexes，移除array中对应的元素，并返回被移除元素的数组。
+          注意: 和 _.at不同, 这个方法会改变数组 array。
+    参数：array (Array): 要修改的数组。
+          [indexes] (...(number|number[])): 要移除元素的索引。
+    返回：(Array): 返回移除元素组成的新数组。
+    */
+    let arr = ['Hello', 'World', 'Lodash', 'Vue'];
+    let newArr = _.pullAt(arr, 2,3);
+    console.log(arr);         //["Hello", "World"]
+    console.log(newArr)       //["Lodash", "Vue"]
+  </script>
+</body>
+</html>

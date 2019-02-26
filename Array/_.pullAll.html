@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>_.pullAll</title>
+  <script src="../js/lodash.js"></script>
+</head>
+<body>
+  <script>
+    /*
+    语法：_.pullAll(array, values)
+    用法：这个方法类似_.pull，区别是这个方法接收一个要移除值的数组。
+          注意：不同于 _.difference, 这个方法会改变数组 array。
+    参数：array (Array): 要修改的数组。
+          values (Array): 要移除值的数组。
+    返回：(Array): 返回 array.
+    */
+    let arr = [1, 2, 3, 4, 5];
+    console.log(_.pullAll(arr, [2, 5]))      //[1, 3, 4]
+  </script>
+</body>
+</html>
