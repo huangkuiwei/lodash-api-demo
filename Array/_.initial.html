@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>_.initial</title>
+  <script src="../js/lodash.js"></script>
+</head>
+<body>
+  <script>
+    /*
+    语法：_.initial(array)
+    用法：获取数组array中除了最后一个元素之外的所有元素（愚人码头注：去除数组array中的最后一个元素）。
+    参数：array (Array): 要查询的数组。
+    返回：(Array): 返回截取后的数组array。
+    */
+    let arr = [1, 2, 3, 4, 5, 6];
+    let newArr = _.initial(arr);
+    console.log(newArr)     //[1, 2, 3, 4, 5]
+  </script>
+</body>
+</html>
