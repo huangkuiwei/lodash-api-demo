@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>_.intersectionBy</title>
+  <script src="../js/lodash.js"></script>
+</head>
+<body>
+  <script>
+    /*
+    语法：_.intersectionBy([arrays], [iteratee=_.identity])
+    用法：这个方法类似 _.intersection，区别是它接受一个 iteratee 调用每一个arrays的每个值以产生一个值，通过产生的值进行了比较。
+          结果值是从第一数组中选择。iteratee 会传入一个参数：(value)。
+    参数：[arrays] (...Array): 待检查的数组。
+          [iteratee=_.identity] (Array|Function|Object|string): iteratee（迭代器）调用每个元素。
+    返回：(Array): 返回一个包含所有传入数组交集元素的新数组。
+    */
+    let arr1 = [1.5, 2, 3, 4, 5.6];
+    let arr2 = [2.1, 5.4];
+    let newArr = _.intersectionBy(arr1, arr2, Math.floor);
+    console.log(newArr)     //[2, 5.6]
+  </script>
+</body>
+</html>
