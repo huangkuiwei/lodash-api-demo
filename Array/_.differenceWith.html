@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>_.differenceWith</title>
-  <script src="../js/lodash.js"></script>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>_.differenceWith</title>
+    <script src="../js/lodash.js"></script>
+  </head>
+  <body>
+    <script>
     /*
     语法：_.differenceWith(array, [values], [comparator])
     用法：这个方法类似_.difference ，除了它接受一个 comparator （愚人码头注：比较器），它调用比较array，values中的元素。
@@ -17,9 +17,9 @@
           [comparator] (Function): comparator 调用每个元素。
     返回：(Array): 返回一个过滤值后的新数组。
     */
-    let arr = [{'x': 1, 'y': 2}, {'x': 2, 'y': 1}];
-    let newArr = _.differenceWith(arr, [{'x': 1, 'y': 2}], _.isEqual);
+    let arr = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }]
+    let newArr = _.differenceWith(arr, [{ 'x': 1, 'y': 2 }], _.isEqual)
     console.log(newArr)     // => [{ 'x': 2, 'y': 1 }]
-  </script>
-</body>
+    </script>
+  </body>
 </html>

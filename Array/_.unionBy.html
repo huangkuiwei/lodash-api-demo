@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>_.unionBy</title>
-  <script src="../js/lodash.js"></script>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>_.unionBy</title>
+    <script src="../js/lodash.js"></script>
+  </head>
+  <body>
+    <script>
     /*
     语法：_.unionBy([arrays], [iteratee=_.identity])
     用法：这个方法类似 _.union ，除了它接受一个 iteratee （迭代函数），调用每一个数组（array）的每个元素以产生唯一性计算的标准。
@@ -15,7 +15,7 @@
           [iteratee=_.identity] (Array|Function|Object|string): 迭代函数，调用每个元素。
     返回：(Array): 返回一个新的联合数组。
     */
-    _.unionBy([2.1], [1.2, 2.3], Math.floor);      // => [2.1, 1.2]
-  </script>
-</body>
+    _.unionBy([2.1], [1.2, 2.3], Math.floor)      // => [2.1, 1.2]
+    </script>
+  </body>
 </html>

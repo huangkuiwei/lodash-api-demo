@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>_.pullAllBy</title>
-  <script src="../js/lodash.js"></script>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>_.pullAllBy</title>
+    <script src="../js/lodash.js"></script>
+  </head>
+  <body>
+    <script>
     /*
     语法：_.pullAllBy(array, values, [iteratee=_.identity])
     用法：这个方法类似于_.pullAll ，区别是这个方法接受一个 iteratee（迭代函数） 调用 array 和 values的每个值以产生一个值，
@@ -16,9 +16,9 @@
           values (Array): 要移除值的数组。
     返回：(Array): 返回 array.
     */
-    let array = [{'x': 1}, {'x': 2}, {'x': 3}, {'x': 1}];
-    _.pullAllBy(array, [{'x': 1}, {'x': 3}], 'x');
-    console.log(array);     // => [{ 'x': 2 }]
-  </script>
-</body>
+    let array = [{ 'x': 1 }, { 'x': 2 }, { 'x': 3 }, { 'x': 1 }]
+    _.pullAllBy(array, [{ 'x': 1 }, { 'x': 3 }], 'x')
+    console.log(array)     // => [{ 'x': 2 }]
+    </script>
+  </body>
 </html>

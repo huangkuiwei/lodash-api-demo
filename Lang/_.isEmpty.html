@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>_.isEmpty</title>
-  <script src="../js/lodash.js"></script>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>_.isEmpty</title>
+    <script src="../js/lodash.js"></script>
+  </head>
+  <body>
+    <script>
     /*
     语法：_.isEmpty(value)
     用法：检查 value 是否为一个空对象，集合，映射或者set。
@@ -17,16 +17,16 @@
     参数：value (*): 要检查的值。
     返回：(boolean): 如果 value 为空，那么返回 true，否则返回 false。
     */
-    console.log(_.isEmpty('Hello'));                 //false
-    console.log(_.isEmpty(123));                     //true
-    console.log(_.isEmpty(null));                    //true
-    console.log(_.isEmpty(true));                    //true
-    console.log(_.isEmpty([]));                      //true
-    console.log(_.isEmpty([1, 2, 3]));               //false
-    console.log(_.isEmpty({}));                      //true
-    console.log(_.isEmpty({name: 'huang'}));         //false
-    console.log(_.isEmpty(new Set([1, 2, 3])));      //false
+    console.log(_.isEmpty('Hello'))                 //false
+    console.log(_.isEmpty(123))                     //true
+    console.log(_.isEmpty(null))                    //true
+    console.log(_.isEmpty(true))                    //true
+    console.log(_.isEmpty([]))                      //true
+    console.log(_.isEmpty([1, 2, 3]))               //false
+    console.log(_.isEmpty({}))                      //true
+    console.log(_.isEmpty({ name: 'huang' }))         //false
+    console.log(_.isEmpty(new Set([1, 2, 3])))      //false
     console.log(_.isEmpty(new Map([[1], [2]])))      //false
-  </script>
-</body>
+    </script>
+  </body>
 </html>

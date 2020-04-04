@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>_.zipWith</title>
-  <script src="../js/lodash.js"></script>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>_.zipWith</title>
+    <script src="../js/lodash.js"></script>
+  </head>
+  <body>
+    <script>
     /*
     语法：_.zipWith([arrays], [iteratee=_.identity])
     用法：这个方法类似于_.zip，不同之处在于它接受一个 iteratee（迭代函数），来 指定分组的值应该如何被组合。
@@ -16,8 +16,8 @@
     返回：(Array): 返回分组元素的新数组。
     */
     _.zipWith([1, 2], [10, 20], [100, 200], function (a, b, c) {
-      return a + b + c;
-    });     // => [111, 222]
-  </script>
-</body>
+      return a + b + c
+    })     // => [111, 222]
+    </script>
+  </body>
 </html>

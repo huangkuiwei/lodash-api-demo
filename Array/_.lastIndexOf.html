@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>_.lastIndexOf</title>
-  <script src="../js/lodash.js"></script>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>_.lastIndexOf</title>
+    <script src="../js/lodash.js"></script>
+  </head>
+  <body>
+    <script>
     /*
     语法：_.lastIndexOf(array, value, [fromIndex=array.length-1])
     用法：这个方法类似 _.indexOf ，区别是它是从右到左遍历array的元素。
@@ -15,9 +15,9 @@
           [fromIndex=array.length-1] (number): 开始搜索的索引值。
     返回：(number): 返回匹配值的索引值，否则返回 -1。
     */
-    let arr = [1, 2, 3, 4, 6, 3, 7, 2, 3];
-    let newValue = _.lastIndexOf(arr, 3, 6);
+    let arr = [1, 2, 3, 4, 6, 3, 7, 2, 3]
+    let newValue = _.lastIndexOf(arr, 3, 6)
     console.log(newValue)     //5
-  </script>
-</body>
+    </script>
+  </body>
 </html>

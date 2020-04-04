@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>_.dropWhile</title>
-  <script src="../js/lodash.js"></script>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>_.dropWhile</title>
+    <script src="../js/lodash.js"></script>
+  </head>
+  <body>
+    <script>
     /*
     语法：_.dropWhile(array, [predicate=_.identity])
     用法：创建一个切片数组，去除array中从起点开始到 predicate 返回假值结束部分。predicate 会传入3个参数： (value, index, array)。
@@ -15,16 +15,16 @@
     返回：(Array): 返回array剩余切片。
     */
     let arr = [
-      {name: 'huang', age: 24},
-      {name: 'zhang', age: 56},
-      {name: 'li', age: 34},
-      {name: 'liu', age: 25}
-    ];
+      { name: 'huang', age: 24 },
+      { name: 'zhang', age: 56 },
+      { name: 'li', age: 34 },
+      { name: 'liu', age: 25 }
+    ]
     let newArr = _.dropWhile(arr, function (item) {
-      console.log(item);      //{name: 'huang', age: 24}    {name: 'zhang', age: 56}
+      console.log(item)      //{name: 'huang', age: 24}    {name: 'zhang', age: 56}
       return item.age < 30
-    });
+    })
     console.log(newArr)     //[{name: 'zhang', age: 56}, {name: 'li', age: 34}, {name: 'liu', age: 25}]
-  </script>
-</body>
+    </script>
+  </body>
 </html>

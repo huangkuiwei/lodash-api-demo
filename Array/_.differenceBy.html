@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>_.differenceBy</title>
-  <script src="../js/lodash.js"></script>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>_.differenceBy</title>
+    <script src="../js/lodash.js"></script>
+  </head>
+  <body>
+    <script>
     /*
     语法：_.differenceBy(array, [values], [iteratee=_.identity])
     用法：这个方法类似_.difference ，除了它接受一个 iteratee （愚人码头注：迭代器）， 调用array 和 values 中的每个元素以产生比较的标准。
@@ -18,10 +18,10 @@
           [iteratee=_.identity] (Array|Function|Object|string): iteratee 调用每个元素。
     返回：(Array): 返回一个过滤值后的新数组。
     */
-    let arr1 = [1.4, 5.6, 3.6, 7.1];      // => [1, 5, 3, 7]
-    let arr2 = [4.6, 1, 7, 0.9, 9.8];     // => [4, 1, 7, 0, 9]
-    let newArr = _.differenceBy(arr1, arr2, Math.floor);
+    let arr1 = [1.4, 5.6, 3.6, 7.1]      // => [1, 5, 3, 7]
+    let arr2 = [4.6, 1, 7, 0.9, 9.8]     // => [4, 1, 7, 0, 9]
+    let newArr = _.differenceBy(arr1, arr2, Math.floor)
     console.log(newArr)     //[5.6, 3.6]
-  </script>
-</body>
+    </script>
+  </body>
 </html>

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>_.fromPairs</title>
-  <script src="../js/lodash.js"></script>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>_.fromPairs</title>
+    <script src="../js/lodash.js"></script>
+  </head>
+  <body>
+    <script>
     /*
     语法：_.fromPairs(pairs)
     用法：与_.toPairs正好相反；这个方法返回一个由键值对pairs构成的对象。
     参数：pairs (Array): 键值对pairs。
     返回：(Object): 返回一个新对象。
     */
-    let arr = [['name', 'huang'], ['age', 22]];
-    let newArr = _.fromPairs(arr);
+    let arr = [['name', 'huang'], ['age', 22]]
+    let newArr = _.fromPairs(arr)
     console.log(newArr)     //{name: "huang", age: 22}
-  </script>
-</body>
+    </script>
+  </body>
 </html>
